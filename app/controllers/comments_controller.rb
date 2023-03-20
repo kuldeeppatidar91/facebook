@@ -10,7 +10,7 @@ class CommentsController < ApplicationController
 				      else
 				       	Comment.find_by(id: params[:comment_id])
 				      end
-	  # byebug
+	 
 	  comment =  object.comments.new(comment_params)
 	  # comment =  post.comments.comment.new(comment_params)
     comment.user = current_user
